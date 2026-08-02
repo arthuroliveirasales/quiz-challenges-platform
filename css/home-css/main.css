@@ -1,0 +1,111 @@
+#mainContentPage {
+  padding-left: 180px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.text {
+  color: white;
+}
+#motivationPhrase {
+  display: flex;
+  color: plum;
+  font-size: 0.7em;
+  border: 1px solid rgb(34, 0, 88);
+  width: 142px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+#mainTitle {
+  max-width: 400px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 2.8em;
+}
+#mainTitle span {
+  color: rgb(130, 6, 231);
+}
+#mainParagraph {
+  color: rgb(214, 214, 214);
+  max-width: 430px;
+  font-size: 0.9em;
+}
+#mainButtons {
+  display: flex;
+}
+.mainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 134px;
+  height: 39px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-family: "Inter";
+  margin-right: 14px;
+  gap: 5px;
+  margin-top: 10px;
+}
+#startLearnigButton {
+  background-color: rgb(118, 19, 248);
+}
+#exploreQuizzesButton {
+  background-color: transparent;
+  border: 1px solid rgb(68, 68, 68);
+  color: rgb(239, 239, 240);
+}
+hr {
+  border: none;
+  margin-top: 0;
+  height: 1px;
+  background-color: rgba(58, 57, 57, 0.267);
+}
+/* second Main Content Page */
+#secondMainContentPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subtitle {
+  margin: 0 auto;
+}
+#boxes {
+  display: flex;
+  gap: 13px;
+}
+.box {
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(13, 13, 49);
+  height: 100px;
+  width: 220px;
+}
+.box div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+.box h3 {
+  font-size: 0.95em;
+  margin-bottom: auto;
+  height: 10px;
+}
+.box p {
+  font-size: 0.7em;
+  width: 140px;
+}
+.box img {
+  border-radius: 10px;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+#bottomNavbarContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 60px;
+  box-sizing: border-box;
+
+  background-color: rgb(6, 1, 48);
+  border-top: 1px solid rgba(32, 32, 32, 0.377);
+}
+
+#bottomNavbarButtons,
+#links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: 0;
+}
+
+#bottomNavbarButtons a {
+  display: inline-block;
+
+  max-width: 90px;
+  padding: 5px;
+
+  color: rgb(212, 212, 212);
+  font-size: 0.85em;
+  text-decoration: none;
+}
