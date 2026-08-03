@@ -1,3 +1,5 @@
-@import url("./css/home-css/pagetop.css");
-@import url("./css/home-css/main.css");
-@import url("./css/home-css/bottomNavbar.css");
+@import "/css/home-css/topNavbar.css";
+@import "/css/home-css/global.css";
+@import "/css/home-css/main.css";
+@import "/css/home-css/responsiveness.css";
+@import "/css/home-css/informations.css";

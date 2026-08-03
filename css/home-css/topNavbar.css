@@ -1,0 +1,89 @@
+#topNavbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  height: 60px;
+
+  background-color: rgb(255, 255, 255);
+}
+#toolsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+
+  font-weight: bolder;
+  font-family: "Inter";
+
+  cursor: pointer;
+}
+/*  */
+#searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  border-radius: 15px;
+  width: 340px;
+
+  background-color: rgb(236, 236, 236);
+}
+#searchbarInput {
+  border: none;
+  outline: none;
+
+  background-color: rgb(236, 236, 236);
+  height: 35px;
+  width: 300px;
+
+  font-weight: bolder;
+  font-family: "Inter", sans-serif;
+}
+/*  */
+#loginButtons {
+  display: flex;
+  gap: 10px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 15px;
+  height: 38px;
+  width: 70px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+
+  cursor: pointer;
+}
+#loginButton:hover {
+  background-color: rgb(236, 236, 236);
+}
+#signupButton {
+  background-color: bisque;
+  color: rgb(204, 77, 30);
+
+  transition: 0.2s ease;
+}
+#signupButton:hover {
+  background-color: rgb(255, 214, 160);
+}

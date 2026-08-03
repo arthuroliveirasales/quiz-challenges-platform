@@ -1,111 +1,153 @@
-#mainContentPage {
-  padding-left: 180px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-}
-.text {
-  color: white;
-}
-#motivationPhrase {
-  display: flex;
-  color: plum;
-  font-size: 0.7em;
-  border: 1px solid rgb(34, 0, 88);
-  width: 142px;
-  height: 18px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin-top: 70px;
+#mainContent {
+  padding: 20px;
+  margin-top: 80px;
+
+  background-color: rgb(250, 240, 227);
 }
 #mainTitle {
-  max-width: 400px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-size: 2.8em;
-}
-#mainTitle span {
-  color: rgb(130, 6, 231);
+  margin: auto;
+  text-align: center;
+  width: 60%;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+
+  font-family: "Manrope", sans-serif;
+  font-weight: bolder;
+  font-size: 3.5em;
+  color: rgb(0, 0, 0);
 }
 #mainParagraph {
-  color: rgb(214, 214, 214);
-  max-width: 430px;
-  font-size: 0.9em;
-}
-#mainButtons {
-  display: flex;
-}
-.mainButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  width: 134px;
-  height: 39px;
-  border-radius: 5px;
-  font-size: 0.8em;
-  font-family: "Inter";
-  margin-right: 14px;
-  gap: 5px;
+  text-align: center;
+  margin: auto;
+  width: 70%;
   margin-top: 10px;
+
+  font-size: 1.3em;
 }
-#startLearnigButton {
-  background-color: rgb(118, 19, 248);
+#signupButton2 {
+  margin: auto;
+  margin-top: 20px;
+
+  width: 140px;
+  height: 44px;
+
+  background-color: bisque;
+  color: rgb(204, 77, 30);
+
+  transition: 0.2s ease;
 }
-#exploreQuizzesButton {
-  background-color: transparent;
-  border: 1px solid rgb(68, 68, 68);
-  color: rgb(239, 239, 240);
+#signupButton2:hover {
+  background-color: rgb(255, 214, 160);
 }
-hr {
-  border: none;
-  margin-top: 0;
-  height: 1px;
-  background-color: rgba(58, 57, 57, 0.267);
-}
-/* second Main Content Page */
-#secondMainContentPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#subtitle {
-  margin: 0 auto;
-}
-#boxes {
-  display: flex;
-  gap: 13px;
-}
-.box {
-  margin-top: 13px;
+/* cards */
+
+#cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: rgb(13, 13, 49);
-  height: 100px;
-  width: 220px;
+  gap: 20px;
+  width: 100;
+  animation: gapless 1ms ease-in-out;
+  animation-timeline: scroll();
 }
-.box div {
+.card {
   display: flex;
   flex-direction: column;
-  margin-bottom: auto;
-}
-.box h3 {
-  font-size: 0.95em;
-  margin-bottom: auto;
-  height: 10px;
-}
-.box p {
-  font-size: 0.7em;
-  width: 140px;
-}
-.box img {
+
+  height: 760px;
+  width: 300px;
+  margin-top: 60px;
+
   border-radius: 10px;
-  margin-left: 0;
-  margin-right: 10px;
-  margin-bottom: auto;
+  background-color: rgb(145, 142, 142);
+
+  animation: expanding 1ms ease-in-out forwards;
+  animation-timeline: scroll();
+  animation-range: normal 50%;
+}
+#card1 {
+  background-color: rgb(155, 236, 247);
+}
+#card2 {
+  background-color: bisque;
+}
+#card3 {
+  background-color: rgb(255, 177, 8);
+}
+#card4 {
+  background-color: pink;
+}
+@keyframes expanding {
+  from {
+    width: 300px;
+  }
+  to {
+    width: calc(50vh - 10px);
+  }
+}
+@keyframes gapless {
+  from {
+    gap: 20px;
+  }
+  to {
+    gap: 5px;
+  }
+}
+@keyframes minor {
+  from {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.number {
+  display: flex;
+  justify-content: start;
+  margin: 20px;
   margin-top: 20px;
+  margin-left: 27px;
+
+  font-size: 3em;
+  font-weight: 240;
+}
+#n1 {
+  color: rgb(43, 174, 226);
+}
+#n2 {
+  color: rgb(255, 189, 47);
+}
+#n3 {
+  color: rgb(226, 128, 0);
+}
+#n4 {
+  color: rgb(255, 122, 144);
+}
+.card h2 {
+  justify-content: start;
+  margin: 10px;
+  margin-left: 17px;
+  margin-bottom: 0;
+
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  font-size: 3em;
+  font-weight: 680;
+
+  animation: minor 1ms ease-in-out forwards;
+  animation-timeline: scroll();
+  animation-range: normal 50%;
+}
+#cardDescription {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 0;
+
+  font-weight: 500;
+}
+#line {
+  color: rgb(0, 153, 255);
+  font-weight: bolder;
 }

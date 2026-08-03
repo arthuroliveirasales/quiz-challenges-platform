@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  background-color: rgb(241, 241, 241);
+}
+body > * {
+  font-family: "Inter", sans-serif;
+}
+.text {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+::selection {
+  background-color: rgb(255, 165, 47);
+}

@@ -10,179 +10,115 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
-    />   
+    />
 
-    <title>Quiz Challenges Platform</title>    
-     <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" href="" type="image/png" />
+    <title>Quiz Challenges Platform</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <main>
-      <nav class="element" id="navbarContainer">
-        <a href="/" id="logo">
-          <img
-            id="logoImage"
-            src="assets/icons/home/flash.png"
-            alt="Logo"
-            width="26px"
-          />
-          <p>Quiz<span>&</span>Challenges</p>
-        </a>
-        <div id="navbarButtons">
-          <a href="/">Home</a>
-          <a href="/quizzes">Quizzes</a>
-          <a href="/challenges">Challenges</a>
-          <a href="/leaderboard">Leaderboard</a>
-          <a href="/how-it-works">How it Works</a>
+    <section id="home">
+      <nav id="topNavbar">
+        <div id="toolsContainer">
+          <button class="tools">
+            <p class="text">Study tools</p>
+            <img src="assets/icons/home/arrow.png" alt="arrow" width="20px" />
+          </button>
+          <button class="tools">
+            <p class="text">Matters</p>
+            <img src="assets/icons/home/arrow.png" alt="arrow" width="20px" />
+          </button>
+        </div>
+        <div id="searchbarContainer">
+          <search id="searchbar">
+            <img
+              src="assets/icons/home/magnifier.png"
+              alt="magnifier"
+              width="18px"
+            />
+            <form action="/search" method="get"></form>
+            <input
+              type="search"
+              id="searchbarInput"
+              placeholder="Search here!"
+            />
+          </search>
         </div>
         <div id="loginButtons">
-          <button class="loginButton" id="login">Log in</button
-          ><button class="loginButton" id="signup">Sign Up</button>
+          <button class="login" id="loginButton">Login</button>
+          <button class="login" id="signupButton">Sign up</button>
         </div>
       </nav>
 
-      <div id="mainContentPage">
-        <div id="mainText">
-          <div class="text" id="motivationPhrase">Learn • Pratic • Improve</div>
-          <h1 class="text" id="mainTitle">
-            Learn. Challenge. <br /><span>Level Up.</span>
-          </h1>
-          <p class="text" id="mainParagraph">
-            An interactive quiz and challenge platform designed to help you
-            learn and practice programming in a fun and effective way.
-          </p>
-          <div id="mainButtons">
-            <button class="mainButton" id="startLearnigButton">
-              <img
-                src="assets/icons/home/rocket.png"
-                alt="rocket"
-                width="16px"
-              />
-              <p class="text">Start Learning</p></button
-            ><button class="mainButton" id="exploreQuizzesButton">
-              <img src="assets/icons/home/play.png" alt="play" width="16px" />
-              <p class="text">Explore Quizzes</p>
-            </button>
+      <main id="main">
+        <div id="mainContent">
+          <div id="mainText">
+            <h1 class="text" id="mainTitle">
+              What would you like to challenge yourself with today?
+            </h1>
+            <p class="text" id="mainParagraph">
+              Choose a topic, test your knowledge, and learn something new along
+              the way.
+            </p>
           </div>
+          <button class="login" id="signupButton2">Sign up for free</button>
         </div>
-        <div id="mainImageContainer">
-          <img
-            id="mainImage"
-            src="assets/icons/home/questionnaire.png"
-            alt="
-questionario
-questionnaire"
-            width="480px"
-          />
-        </div>
-      </div>
+        <div id="cards">
+          <div class="card" id="card1">
+            <span class="number" id="n1">01</span>
+            <h2>CARDS</h2>
+            <p class="text" id="cardDescription"></p>
+            <img src="" alt="" width="330px" />
+            <div>
+              <div>
+                <img src="" alt="" />
+                <p></p>
+              </div>
+              <div>
+                <img src="" alt="" />
+                <p></p>
+              </div>
+              <div>
+                <img src="" alt="" />
+                <p></p>
+              </div>
+            </div>
+          </div>
 
-      <hr />
-
-      <div id="secondMainContentPage">
-        <h2 class="text" id="subtitle">Everything you need to grow</h2>
-        <div id="boxes">
-          <div class="box">
-            <img
-              src="assets/icons/home/board-icon.png"
-              alt="board icon"
-              width="42px"
-            />
-            <div>
-              <h3 class="text">Pratic Quizzes</h3>
-              <p class="text">
-                Test your knowledge with interactive puzzles on various
-                programming topics.
-              </p>
-            </div>
+          <div class="card" id="card2">
+            <span class="number" id="n2">02</span>
+            <h2>QUIZ</h2>
           </div>
-          <div class="box">
-            <img
-              src="assets/icons/home/challenge-icons.png"
-              alt="board icon"
-              width="42px"
-            />
-            <div>
-              <h3 class="text">Coding Challenges</h3>
-              <p class="text">
-                Salve real coding chalenges and improve your problem saving
-                slots.
-              </p>
-            </div>
+          <div class="card" id="card3">
+            <span class="number" id="n3">03</span>
+            <h2>CHALLENGE</h2>
           </div>
-          <div class="box">
-            <img
-              src="assets/icons/home/trackProgress-icon.png"
-              alt="board icon"
-              width="42px"
-            />
-            <div>
-              <h3 class="text">Track Progress</h3>
-              <p class="text">
-                Monitor your progress, earn XP, and unlock new anchievements.
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <img
-              src="assets/icons/home/cempeteAndRank-icon.png"
-              alt="board icon"
-              width="42px"
-            />
-            <div>
-              <h3 class="text">Compete and Rank</h3>
-              <p class="text">
-                Compete with other leaners and climb the leaderboard to prove
-                your skills.
-              </p>
-            </div>
+          <div class="card" id="card4">
+            <span class="number" id="n4">04</span>
+            <h2>PRACTICE</h2>
           </div>
         </div>
-      </div>
-
-      <nav id="bottomNavbarContainer">
-        <a href="/" id="logo">
-          <img
-            id="logoImage"
-            src="assets/icons/home/flash.png"
-            alt="Logo"
-            width="26px"
-          />
-          <p>Quiz<span>&</span>Challenges</p>
-        </a>
-        <div id="bottomNavbarButtons">
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-          <a href="/privacyPolicy">Privacy Policy</a>
-          <a href="/termsOfUse">Terms of Use</a>
-        </div>
-        <div id="links">
-          <div>
-            <img src="assets/icons/home/github.png" alt="" width="20px" /><a
-              href=""
-              class="link"
-            ></a
-            >
+        <section id="informations">
+          <div id="informationsTitleContainer">
+            <h1 class="text" id="informationsTitle">
+              A platform built to challenge your skills and accelerate your
+              learning.
+            </h1>
           </div>
-          <div><img src="assets/icons/home/instagram.png" alt="" width="20px" /><a
-              href=""
-              class="link"
-            ></a
-            >
-          </div>
-          <div><img src="assets/icons/home/discord.png" alt="" width="20px" /><a
-              href=""
-              class="link"
-            ></a
-            >
-          </div>
-          <div><img src="assets/icons/home/linkedin.png" alt="" width="20px" /><a
-              href=""
-              class="link"
-            ></a>
-          </div>
-        </div>
-        </div>
-      </nav>
-    </main>
+        </section>
+      </main>
+    </section>
   </body>
 </html>
