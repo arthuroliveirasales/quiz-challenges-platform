@@ -1,5 +1,5 @@
-@import "/css/home-css/topNavbar.css";
-@import "/css/home-css/global.css";
-@import "/css/home-css/main.css";
-@import "/css/home-css/responsiveness.css";
-@import "/css/home-css/informations.css";
+@import "./css/home-css/topNavbar.css";
+@import "./css/home-css/global.css";
+@import "./css/home-css/main.css";
+@import "./css/home-css/responsiveness.css";
+@import "./css/home-css/informations.css";
